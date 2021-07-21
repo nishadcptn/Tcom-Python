@@ -67,6 +67,8 @@ CORS_ORIGIN_ALLOW_ALL = True
 
 ROOT_URLCONF = 'Ecommerce.urls'
 
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',

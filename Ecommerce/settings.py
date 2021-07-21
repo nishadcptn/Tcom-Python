@@ -98,10 +98,13 @@ WSGI_APPLICATION = 'Ecommerce.wsgi.application'
 DATABASES = {
     'default': {
        # 'ENGINE': 'mysql.connector.django',
-       'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'shop',
-        'USER':'root',
-        'PASSWORD':'root',
+        # 'ENGINE': 'django.db.backends.mysql',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'HOST':'ec2-34-194-130-103.compute-1.amazonaws.com',
+        'PORT':'5432',
+        'NAME': 'd9gd3gq8jmhesr',
+        'USER':'wovnrwbcwgpdsw',
+        'PASSWORD':'f3bc9856cbf4aa7af3d6bb39e0cb0a1581efd0b18fd7616f987c6c417a60e48d',
         'OPTION':{
             'autocommit':True,
             "charset": "utf8mb4",

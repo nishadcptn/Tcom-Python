@@ -490,7 +490,8 @@ class OrderPlace(APIView):
                     #For Single Device Notification...
                     data = {"title":message_title,"body":message_body,"Room":"Track Akshaya"}
                     result = push_service.notify_single_device(registration_id=_token, message_title=message_title, message_body=message_body,data_message=data,extra_notification_kwargs={"click_action": "trackakshaya"})
-                    
+                    print("hiiiiiii")
+                    print(result)
                     ########################################################
                 return Response(order)
             else:

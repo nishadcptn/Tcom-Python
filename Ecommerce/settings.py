@@ -43,7 +43,6 @@ INSTALLED_APPS = [
     'fcm_django',
     'rest_framework',
     'rest_framework.authtoken',
-    # 'django_dropbox_storage',
 ]
 
 MIDDLEWARE = [
@@ -162,9 +161,4 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
 
-# DEFAULT_FILE_STORAGE = 'django_dropbox_storage.storage.DropboxStorage'
-# DROPBOX_ACCESS_TOKEN = 'sl.A18TiHAB26OsJW4-PDTgjS1tHBuNMXp7LwGZ7kPOVv426zXbnAQ4l4us2ghdEWgZAydgHEwgXPaJRbxHlG7kYwX2p-oSaA7l5svXPcfHwyw-Doz-HGDjgrTfb3VeuwYerO4vQNw'
-# DROPBOX_CONSUMER_KEY = '8zhravgry2ov1f2'
-# DROPBOX_CONSUMER_SECRET = '	kx65oxs71n61xd9'
-# DROPBOX_ROOT_PATH = '/media/'
 django_heroku.settings(locals())

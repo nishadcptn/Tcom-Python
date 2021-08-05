@@ -1,7 +1,6 @@
 from django.db import models
+from django.contrib.auth.models import User
 
-
-DROPBOX_STORAGE = DropboxStorage()
 
 
 class Location(models.Model):

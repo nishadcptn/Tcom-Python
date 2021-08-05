@@ -1,6 +1,8 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django_dropbox_storage.storage import DropboxStorage
 
+DROPBOX_STORAGE = DropboxStorage()
 
 
 class Location(models.Model):
@@ -11,7 +13,7 @@ class Location(models.Model):
     latitude = models.DecimalField( max_digits=22, decimal_places=16,null = True, blank=True)
     longitude =models.DecimalField( max_digits=22, decimal_places=16,null = True, blank=True)
     upi_number = models.CharField( max_length=10,null = True, blank=True)
-    qr_code = models.ImageField( upload_to="location/",null = True, default = None,blank=True)
+    qr_code = models.ImageField( upload_to="location/",null = True, default = None,blank=True,storage=DROPBOX_STORAGE)
     class Meta:
         db_table = "Location"
 

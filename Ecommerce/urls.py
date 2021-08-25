@@ -92,7 +92,7 @@ urlpatterns = [
     path('allincomereport/',AllIncomeReport.as_view(), name='AllIncomeReport'),
     path('alladmin/',AllAdmin.as_view(), name='AllAdmin'),
     path('forgotpwd/',ForgotPassword.as_view(), name='ForgotPassword'),
-    url(r'^$', index)
+    #url(r'^$', index)
 
 ]
 
